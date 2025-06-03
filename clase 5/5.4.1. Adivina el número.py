@@ -1,7 +1,7 @@
 #5.4.1. Adivina el número.py
 '''
 Clase:        fundamentos de la programacion
-Tema:         Fase de fortalecimiento lógico
+Tema:         Fase de fortalecimiento lógico: Estructuras Iterativas
 Ejercicios: 5.4.1. ¡Adivina el número!
 Descripcion:
 Genera un número aleatorio entre 1 y 100 y pide al usuario que lo adivine.

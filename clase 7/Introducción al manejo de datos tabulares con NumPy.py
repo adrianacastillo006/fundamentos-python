@@ -81,20 +81,20 @@ print(consumo_normalizado)
 
 #pregunta 1
 consumo_hogar5=consumo[4,4]
-print(f"1. el consumo del hogar 5 el viernes (dia 5) es {consumo_hogar5}")
+print(f"1. El consumo del hogar 5 el viernes (dia 5) es {consumo_hogar5}")
 #pregunta 2
 consumo_domimgo=consumo[[7,8,9],6]
-print(f"2. el consumo de los ultimos tres lugares el domingo es: {consumo_domimgo} ")
+print(f"2. El consumo de los ultimos tres hogares el dia  domingo es: {consumo_domimgo} ")
 #pregunta 3
 datos=consumo[:,[5,6]]
 promedio_consumo_finde=np.mean(datos)
-print(f"3. el promedio de consumo los fines de semana es: {promedio_consumo_finde :.2f}")
+print(f"3. El promedio de consumo de los fines de semana es: {promedio_consumo_finde :.2f}")
 
 #pregunta 4 
 desviacion_dia=np.std(consumo,axis=0)
 max_desvi=np.argmax(desviacion_dia)
 dias=['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo']
-print(f"4. el dia con mayor desviacion estandar es  el {dias[max_desvi]}.Este dia  los hogares no consumieron de forma similar. Algunos consumieron poco, otros mucho.")
+print(f"4. el dia con mayor desviacion estandar es  el {dias[max_desvi]}.Este dia  los hogares no consumieron de forma similar. Algunos consumieron poco y  otros mucho.")
 
 #pregunta 5
 menor_consumo = np.argsort(consumo_total_hogar)[:3]
@@ -107,4 +107,4 @@ for i  in range(len(menor_consumo)):
 hogar_3=consumo[2]
 porciento=hogar_3*1.10
 total=np.sum(porciento)
-print(f"6. El nuevo consumo semanal de la casa 3 seria {total:.2f}")
+print(f"6. El nuevo consumo semanal,con un aumento del 10%, de la casa 3 seria {total:.2f}")
